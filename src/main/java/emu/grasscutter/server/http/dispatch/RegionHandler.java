@@ -14,7 +14,6 @@ import emu.grasscutter.net.proto.RetcodeOuterClass.Retcode;
 import emu.grasscutter.net.proto.StopServerInfoOuterClass.StopServerInfo;
 import emu.grasscutter.server.event.dispatch.*;
 import emu.grasscutter.server.http.Router;
-import emu.grasscutter.server.http.dispatch.RegionHandler.RegionData;
 import emu.grasscutter.server.http.objects.QueryCurRegionRspJson;
 import emu.grasscutter.utils.*;
 import io.javalin.Javalin;
@@ -23,10 +22,6 @@ import java.time.Instant;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Pattern;
-
-import javax.swing.plaf.synth.Region;
-
-import org.jcp.xml.dsig.internal.dom.Utils;
 import org.slf4j.Logger;
 
 /** Handles requests related to region queries. */
